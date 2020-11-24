@@ -11,18 +11,17 @@ class Ground{
     this.width=width
     this.height=height
 
-    this.body=Bodies.rectangle(this.x,this.y,options)
+    this.body=Bodies.rectangle(this.x,this.y,width,height,options)
     World.add(world,this.body)
     }
     display(){
 
         var groundpos=this.body.position
-        
         push()
-        translate(groundpos.x,groundpos.y)
+      // translate(groundpos.x,groundpos.y)
         rectMode(CENTER)
         fill("brown")
-        rect(400,680,800,20)
+        rect(groundpos.x,groundpos.y,this.width,this.height)
         pop()
     } 
 }
