@@ -3,10 +3,10 @@ class Ball{
 constructor(x,y,r)
 {
 var options={
-    isStatic:true,
+    isStatic:false,
     density:1.2,
-    restitution:1.5,
-    friction:0.5,
+    restitution:1,
+    friction:1,
 }
 this.x=x
 this.y=y
