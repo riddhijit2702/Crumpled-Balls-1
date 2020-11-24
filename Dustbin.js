@@ -14,7 +14,7 @@ class Dustbin{
     this.rightbody=Bodies.rectangle(x+width/2,y-width/2,height,width,options)
     World.add(world,this.rightbody)
 
-    this.leftbody=Bodies.rectangle(x-width/2,y-height/2,height,width,options)
+    this.leftbody=Bodies.rectangle(x-width/2,y-width/2,height,width,options)
     World.add(world,this.leftbody)
 /*this.x=x;
 this.y=y;
