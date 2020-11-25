@@ -4,7 +4,9 @@ const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 var ball,dustbin,ground;
 
-
+function preload(){
+  
+}
 function setup() {
 	createCanvas(800, 700);
 
@@ -35,10 +37,12 @@ function draw() {
 }
 
 function keyPressed() {
-	if(keyCode===UP_ARROW){
-   Matter.Body.applyForce(ball.body,ball.body.position,{x:35,y:-35})
-	}
+ 
+    if(keyCode===UP_ARROW){
+     Matter.Body.applyForce(ball.body,ball.body.position,{x:40,y:-40})
+    }
 }
+
 
 
 
